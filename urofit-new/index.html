@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="timespent.js"></script>
       <script src="device.min.js"></script>
@@ -23,12 +24,18 @@
          img[height="1"], img[width="1"] {
          display: none !important;
          }
+
+         i.fa-whatsapp{
+                padding-right: 5px;
+    font-size: 25px;
+    line-height: 38px;
+         }
       </style>
       <!--retarget--><!--retarget-->
       <meta charset="utf-8">
       <meta content="width=device-width, initial-scale=1.0" name="viewport">
       <meta content="IE=edge" http-equiv="X-UA-Compatible">
-      <title>Beli Supermasi</title>
+      <title>Urofit</title>
       <link href="css/index.css" media="all" rel="stylesheet" type="text/css">
       <link href="img/favi.ico" rel="icon">
    </head>
@@ -154,16 +161,17 @@
                   </div>
                   <h3> Adakah metode pengobatan yang efektif sekaligus AMAN buat pasien?</h3>
                   <div class="yellow-box">
-                     <h1> Tes Dokter Agung </h1>
-                     <h3> Para peserta tes mendapat kesempatan untuk memesan <span class="orange"> Supermasi </span> dengan harga spesial </h3>
-                     <p class="red"> Kondisi kesehatan Anda memuaskan. Namun, untuk mencegah terjadinya masalah impotensi, kami menyarankan Anda untuk mencoba <span class="orange"> Supermasi </span></p>
+                     <h1> Tes Dokter Wirawan </h1>
+                     <h3> Para peserta tes mendapat kesempatan untuk memesan <span class="orange"> Urofit </span> dengan harga spesial </h3>
+                     <p class="red"> Kondisi kesehatan Anda memuaskan. Namun, untuk mencegah terjadinya masalah prostat, kami menyarankan Anda untuk mencoba <span class="orange"> Urofit </span></p>
                      <b id="num" style="display: none; font-size: 18px;"> Pertanyaan <span id="qn"> 1 </span> /5 </b>
                      <center>
                         <div class="res">
                            <h2 id="hres" style="display: none; font-family: Arial;"> Hasil Anda: </h2>
                            <p id="res" style="font-size: 20px; display: none; text-align: center;"><span style="font-size: 16px; font-family: Arial;"> Efek yang akan Anda peroleh tergantung pada berapa lama Anda minum obat tetes ini </span></p>
                            <div id="sale" style="font-size: 14px; display: none;">
-                              <b> Terima kasih atas partisipasi Anda dalam tes ini! </b><b> Harap diperhatikan bahwa kami berhak untuk memberikan diskon untuk obat tetes <span class="orange"> Supermasi </span> kepada para peserta tes yang berikutnya. </b>
+                              <b> Terima kasih atas partisipasi Anda dalam tes ini! Jika setidaknya 1 gejala bersamaan, segera
+mulai pengobata </b><b> Harap diperhatikan bahwa kami berhak untuk memberikan diskon untuk obat tetes <span class="orange"> Urofit</span> kepada para peserta tes yang berikutnya. </b>
                               <table border="0" style="margin-top: 10px;">
                                  <tbody>
                                     <tr>
@@ -180,49 +188,51 @@
                                     </tr>
                                  </tbody>
                               </table>
-                              <a href="https://royaltrack.xyz/click.php?lp=1" class="button-go toform"> Pesan </a>
+                               <img class="product" src="img/product.png" width="200">
+                              <a  onclick="reportConversion(event.target, 'lead')" href="https://wa.me/6285210128727?text=Halo...Saya%20tertarik%20dengan%20obat%20prostat%20Urofit..." target="_blank" class="button-go toform"> <i class="fab fa-whatsapp"> </i>Pesan </a>
                            </div>
                         </div>
                         <div id="loading" style="display: none;"><img src="img/ldr00000.gif"><b> Mengalkulasi kemanjuran obat... </b></div>
                         <input class="tbtn" id="starttest" type="button" value="mulai pengujian">
                         <p class="test" id="qs1" style="padding: 1px 5px 5px;">
-                           <span class="ttl block"> Berapa lama waktu yang Anda butuhkan untuk pulih setelah ejakulasi? </span>
+                           <span class="ttl block">Nyeri di punggung bawah, di testis atau di perineum?</span>
                            <select id="qsv1">
-                              <option value="1"> kurang dari 30 menit </option>
-                              <option value="18"> lebih dari 30 menit </option>
-                              <option value="19"> Saya tidak bisa pulih </option>
+                              <option value="1">Sering </option>
+                              <option value="18">Belum </option>
+                              <option value="19"> Jarang </option>
                            </select>
                         </p>
                         <p class="test" id="qs2" style="padding: 1px 5px 5px;">
-                           <span class="ttl block"> Seberapa sering ereksi Anda cukup kuat untuk mulai berhubungan seksual? </span>
+                           <span class="ttl block"> Sering buang air kecil, dorongan malam? </span>
                            <select id="qsv2">
-                              <option value="39"> Hampir tidak pernah </option>
-                              <option value="141"> Kadang-kadang </option>
-                              <option value="142"> Hampir selalu </option>
+                              <option value="39"> Sering </option>
+                              <option value="141"> Belum </option>
+                              <option value="142"> Jarang </option>
                            </select>
                         </p>
                         <p class="test" id="qs3" style="padding: 1px 5px 5px;">
-                           <span class="ttl block"> Seberapa sering Anda berhasil mempertahankan ereksi Anda hingga hubungan seksual berakhir? </span>
+                           <span class="ttl block"> Tanda-tanda keracunan umum — kelemahan, sakit kepala?</span>
                            <select id="qsv3">
-                              <option value="39"> Hampir tidak pernah </option>
-                              <option value="41"> Kadang-kadang </option>
-                              <option value="42"> Hampir selalu </option>
+                              <option value="39"> Sering </option>
+                              <option value="41"> Belum </option>
+                              <option value="42"> Jarang </option>
                            </select>
                         </p>
                         <p class="test" id="qs4" style="padding: 1px 5px 5px;">
-                           <span class="ttl block"> Seberapa sering Anda mengalami kesulitan untuk menunda ejakulasi? </span>
+                           <span class="ttl block"> Merasa lelah, lemah, sakit otot, sendi, tulang?
+ </span>
                            <select id="qsv4">
-                              <option value="1"> Hampir tidak pernah </option>
-                              <option value="2"> Kadang-kadang </option>
-                              <option value="3"> Hampir selalu </option>
+                              <option value="1">Sering </option>
+                              <option value="2"> Belum </option>
+                              <option value="3"> Jarang </option>
                            </select>
                         </p>
                         <p class="test" id="qs5" style="padding: 1px 5px 5px;">
-                           <span class="ttl block"> Seberapa seringka Anda mengalami ereksi di pagi hari? </span>
+                           <span class="ttl block"> Mengurangi hasrat seksual, mempercepat ejakulasi?</span>
                            <select id="qsv5">
-                              <option value="1"> Setiap hari </option>
-                              <option value="2"> Beberapa kali seminggu </option>
-                              <option value="3"> Saya tidak tahu </option>
+                              <option value="1"> Sering </option>
+                              <option value="2"> Belum </option>
+                              <option value="3"> Jarang </option>
                            </select>
                         </p>
                         <input class="tbtn" id="next" style="display: none;" type="button" value="pertanyaan selanjutnya →">
@@ -262,7 +272,7 @@
                </div>
                <div class="clearfix" style="margin-top: 20px; ">
                   <center>
-                     <img class="product" src="img/product.png" width="200"><img src="img/guarantee.png"><a href="https://royaltrack.xyz/click.php?lp=1" class="button-go toform"> Pesan </a>
+                     <img class="product" src="img/product.png" width="200"><img src="img/guarantee.png"><a  onclick="reportConversion(event.target, 'lead')" href="https://wa.me/6285210128727?text=Halo...Saya%20tertarik%20dengan%20obat%20prostat%20Urofit..." target="_blank"class="button-go toform"> <i class="fab fa-whatsapp"> </i> Pesan </a>
                      <h2>
                         Tanggal kedaluwarsa diskon Anda adalah: 
                         <span class="current-date" style="color: red;">
@@ -275,7 +285,7 @@
                </div>
                <div id="comments">
                   <h1> Komentar baru: <em style="color: rgb(255, 255, 255); font-size: 12px;"> (47/47) </em></h1>
-                  <div class="comment">
+                  <div class="comment mobile">
                      <span class="text1"> Ardi </span>
                      <div class="text3">
                         <img src="img/foto1.jpg">
@@ -287,7 +297,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="comment">
+                  <div class="comment mobile">
                      <span class="text1"> Yogi </span>
                      <div class="text3">
                         <img src="img/foto2.jpg">
@@ -299,7 +309,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="comment">
+                  <div class="comment mobile">
                      <span class="text1">  Bambang </span>
                      <div class="text3">
                         <img src="img/foto10.jpg">
@@ -311,7 +321,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="comment">
+                  <div class="comment mobile">
                      <span class="text1"> Rima </span>
                      <div class="text3">
                         <img src="img/foto8.jpg">
@@ -323,7 +333,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="comment">
+                  <div class="comment mobile">
                      <span class="text1">Yolanda </span>
                      <div class="text3">
                         <img src="img/foto6.jpg">
@@ -335,7 +345,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="comment">
+                  <div class="comment mobile">
                      <span class="text1"> Ilham </span>
                      <div class="text3">
                         <img src="img/foto4.jpg">
@@ -347,7 +357,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="comment">
+                  <div class="comment mobile">
                      <span class="text1"> Arif</span>
                      <div class="text3">
                         <img src="img/foto3.jpg">
@@ -410,8 +420,9 @@
                   <div class="comment mobile">
                      <span class="text1 doctor-answer"> Dokter </span>
                      <div class="text3 bogomolec">
-                        <img class="header-doc" src="img/doc-3.png">
-                        <p> Anda bisa membeli kapsul <span> Supermasi </span> hanya di situs resminya! Klik tombol 'Pesan'. Anda akan langsung diarahkan ke situs resmi dan Anda pun bisa membeli Supermasi di situs tersebut. </p>
+                        <img class="header-doc" src="img/doc-3.png" style="    padding: 0;
+    height: auto;">
+                        <p> Anda bisa membeli kapsul <span> Urofit </span> hanya di situs resminya! Klik tombol 'Pesan'. Anda akan langsung diarahkan ke situs resmi dan Anda pun bisa membeli Urofit di situs tersebut. </p>
                         <div class="date">
                            <script type="text/javascript">
                               dtime_nums(-2, true);
@@ -420,7 +431,7 @@
                      </div>
                   </div>
                </div>
-               <a href="https://royaltrack.xyz/click.php?lp=1" class="button-go toform"> Pesan </a>
+               <a  onclick="reportConversion(event.target, 'lead')" href="https://wa.me/6285210128727?text=Halo...Saya%20tertarik%20dengan%20obat%20prostat%20Urofit..." target="_blank" class="button-go toform" >  <i class="fab fa-whatsapp"> </i>Pesan </a>
             </div>
             <div class="sidebar">
                <div class="itemfirst">
@@ -434,7 +445,7 @@
                            <li> Profesor </li>
                         </ul>
                      </div>
-                     <p> Universitas Urologi Nasional melakukan penelitian terhadap <span class="orange"> Supermasi </span> . Relawan dengan masalah potensi turut berpartisipasi selama 60 hari. Kesimpulannya: </p>
+                     <p> Universitas Urologi Nasional melakukan penelitian terhadap <span class="orange"> Urofit </span> . Relawan dengan masalah potensi turut berpartisipasi selama 60 hari. Kesimpulannya: </p>
                      <hr>
                      <p><b> 1. </b>  Mengurangi rasa sakit, kram dan rasa terbakar </p>
                      <p><b> 2. </b>  Mengurangi rasa sakit, kram dan rasa terbakar</p>
@@ -466,7 +477,7 @@
       </div>
       <script src="js/index.js"></script>
       <!--retarget--><!--retarget-->
-      <div class="ac_footer"><span> © 2019 Copyright. All rights reserved. </span></div>
+      <div class="ac_footer"><span> © 2021 Copyright. All rights reserved. </span></div>
        <script>
          var offerLink = 'https://royaltrack.xyz/click.php?lp=1'; // <-- ссылка на трекер
          var vitrina = '';

@@ -177,7 +177,11 @@ a, .orange{
     }
 
     .header-logo1 {
-        display: none;
+       /* display: none;*/
+    }
+    .images-logo{
+        width: fit-content;
+        margin : 0 auto;
     }
 
     .header-logo2 {
@@ -447,9 +451,15 @@ input[type="text"] {
     .content img {
         margin: 15px 0px;
     }
+
+    p{
+        font-size: 18px;
+    }
     .footer {
         text-align: center;
     }
+
+
 }
 
 @media screen and (max-width: 479px) {
@@ -641,7 +651,7 @@ textarea{
     .img4{
         float: none;
         display: block;
-        margin: auto !important;
+       /* margin: auto !important;*/
         padding-right: 0;
     }
     h1{
