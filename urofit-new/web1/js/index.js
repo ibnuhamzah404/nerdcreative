@@ -53,7 +53,7 @@ function nextq() {
       $("#starttest").hide();
       $("#next").hide();
       $("#skrov").hide();
-      
+      $("#num").hide();
       $("#loading").fadeIn(1000);
       setTimeout(showres, 3000);
       
