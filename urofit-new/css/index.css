@@ -4,6 +4,28 @@
     max-width: 100%;
   margin-left:-20px;
 }
+
+.harga_lama{
+    text-decoration: line-through;
+    font-size: 16px;
+        margin: 0px !important;
+    padding: 0px !important;
+}
+
+.harga{
+    text-align: center;
+    font-weight: bold;
+}
+
+.h-promo{
+    font-size : 20px;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+
+
+
 p{
     margin-bottom: 15px;
     margin-top: 0;
@@ -167,6 +189,11 @@ a, .orange{
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6290c', endColorstr='#077329', GradientType=0);
 }
 
+@media screen and  (min-width: 1000px){
+    .sb{
+        display: none !important;
+    }
+}
 @media screen and  (max-width: 720px) {
     .feedback-form {
         width: 90%;
@@ -442,6 +469,10 @@ input[type="text"] {
     }
 }
 @media screen and (max-width: 767px) {
+    .harga{
+        text-align: center !important;
+    }
+
     .text-header h1, .text-header p{
         padding-left: 0 !important;
     }
@@ -496,6 +527,25 @@ input[type="text"] {
     .sidebar {
         display: none;
     }
+
+    .sb{
+        width: 85%;
+        display: block !important;
+        float: unset;
+        position: unset;
+        width: fit-content;
+        margin: 0 auto;
+
+    }
+
+    .sb .itemfirst{
+        width: 100% !important;
+    }
+
+    .sb .prod-fixed{
+        width: 100% !important;
+    }
+
 
 }
 
