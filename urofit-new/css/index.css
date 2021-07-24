@@ -481,10 +481,21 @@ input[type="text"] {
     }
     .content img {
         margin: 15px 0px;
+       
     }
 
+      .content img.product{
+         width: 80%;
+      }
+
     p{
-        font-size: 18px;
+        font-size: 21px;
+    }
+
+
+
+    h3{
+        font-size: 22px !important;
     }
     .footer {
         text-align: center;
@@ -697,12 +708,45 @@ textarea{
 }
 @media(max-width:600px){
     .img1,
-    .img3,
+  
     .img4{
         float: none;
         display: block;
        /* margin: auto !important;*/
         padding-right: 0;
+    }
+
+    .img3{
+        width: 60%;
+        
+    }
+
+     .ac_footer{
+        padding: 10px 0px;
+     }
+    .harga_lama{
+        font-size: 22px;
+    }
+    .h-promo{
+        font-size: 28px;
+    }
+
+    .sidebar .author img{
+        width: 45%;
+    }
+
+    .aside {
+        padding-top: 0 !important;
+    }
+
+    .button-go{
+        height: 55px;
+        line-height: 55px;
+        margin-top : 10px;
+    }
+
+    i.fa-whatsapp{
+          line-height: 55px;
     }
     h1{
         font-size: 30px;
