@@ -5,6 +5,12 @@
   margin-left:-20px;
 }
 
+
+
+.res p, .res b{
+    font-size: 18px !important;
+}
+
 .harga_lama{
     text-decoration: line-through;
     font-size: 16px;
@@ -326,7 +332,7 @@ div.text-header p {
 
 .sidebar {
     float: right;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.2;
     position: relative;
     top: -47px;border: 1px solid rgb(225, 225, 225);
@@ -472,7 +478,9 @@ input[type="text"] {
     .harga{
         text-align: center !important;
     }
-
+    .comment p{
+        font-size: 19px;
+    }
     .text-header h1, .text-header p{
         padding-left: 0 !important;
     }
@@ -741,13 +749,18 @@ textarea{
 
     .button-go{
         height: 55px;
-        line-height: 55px;
+        line-height: 60px;
         margin-top : 10px;
+        font-size: 28px;
     }
 
     i.fa-whatsapp{
           line-height: 55px;
+
+        font-size: 40px !important;
     }
+
+
     h1{
         font-size: 30px;
     }
