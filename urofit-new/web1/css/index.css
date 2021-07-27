@@ -487,6 +487,11 @@ input[type="text"] {
     .text p, .content h3, .text3, .comment{
         text-align: left;
     }
+
+    .text-jus{
+        text-align: justify !important;
+    }
+
     .content img {
         margin: 15px 0px;
        
